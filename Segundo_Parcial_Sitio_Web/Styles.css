@@ -1,0 +1,208 @@
+.c-item{
+    height: 480px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+b/* Estilos para Light Mode */
+body {
+    background-color: #f2f2f2;
+    color: #000;
+    transition: background-color 0.4s, color 0.4s;
+  }
+  nav.navbar,
+  nav.navbar .container-fluid {
+    background-color: #f2f2f2 !important;
+    transition: background-color 0.4s;
+  }
+  nav.navbar .nav-link,
+  nav.navbar .navbar-brand {
+    color: #000;
+  }
+  
+  /* Estilos para Dark Mode */
+  body.dark {
+    background-color: #2a2734;
+    color: #fff;
+  }
+  body.dark nav.navbar,
+  body.dark nav.navbar .container-fluid {
+    background-color: #2a2734 !important;
+  }
+  body.dark nav.navbar .nav-link,
+  body.dark nav.navbar .navbar-brand {
+    color: #fff !important;
+  }
+  
+  /* Estilos del Switch de Modo Oscuro */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #9a86fd;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  input:checked + .slider::before {
+    transform: translateX(26px);
+  }
+  /* Posicionar los íconos dentro del slider */
+  .slider i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.4s;
+  }
+  .icon-sun {
+    left: 8px;
+    color: #f1c40f;
+    opacity: 1;
+  }
+  .icon-moon {
+    right: 8px;
+    color: #34495e;
+    opacity: 0;
+  }
+  input:checked + .slider .icon-sun {
+    opacity: 0;
+  }
+  input:checked + .slider .icon-moon {
+    opacity: 1;
+  }
+/*Carousel*/
+
+.carousel-fade .carousel-item {
+    transition: opacity 01s ease-in-out;
+  }
+.sobre-nosotros-container {
+  background-color: #EBEBEB;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Fondo y padding para el contenedor "productos" en modo claro */
+.productos {
+    background-color: #f8f9fa; /* Color claro */
+    padding: 20px;
+  }
+  
+  /* Cambios para modo oscuro */
+  .dark-mode .productos {
+    background-color: #343a40; /* Color oscuro */
+    color: #fff;
+  }
+  
+  /* Estilos para la disposición de las tarjetas */
+  .container {
+    display: flex;
+  }
+  
+  .card {
+    position: relative;
+    left: 0px;
+  }
+  
+  /* Superposición de tarjetas */
+  .card:not(:first-child) {
+    margin-left: -50px;
+  }
+  
+  /* Efecto hover: elevación de la tarjeta */
+  .card:hover {
+    transform: translateY(-20px);
+  }
+  
+  /* Desplaza las tarjetas adyacentes al hacer hover */
+  .card:hover ~ .card {
+    left: 50px;
+  }
+  
+  /* Fondo y padding para el contenedor "productos" en modo claro */
+.productos {
+    background-color: #f8f9fa; /* Color claro */
+    padding: 20px;
+}
+
+/* Cambios para modo oscuro en el contenedor "productos" */
+body.dark .productos {
+    background-color: #343a40; /* Color oscuro */
+    color: #fff; /* Texto en blanco para resaltar */
+}
+
+/* Centrar contenido en la sección "Sobre Nosotros" */
+#sobre-nosotros .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Para centrar el texto internamente */
+  }
+
+#productos.container-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;   /* Espacio por encima del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}  
+
+#noticias.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;   /* Espacio por encima del título */
+    margin-bottom: 40px; /* Espacio debajo del título */
+}
+#caracteristicas-materiales.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Para centrar el texto internamente */
+}
+
+.feature-icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-icon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  

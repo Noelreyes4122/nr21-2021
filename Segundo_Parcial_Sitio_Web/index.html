@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mayah Topes. Instalación y venta de topes de mármol y más. Calidad y diseño para transformar tus espacios.">
+  <meta name="keywords" content="topes, mármol, instalación, diseño, calidad, Mayah Topes">
+  <meta name="Noel Reyes" content="Mayah Topes">
+
+  <title>Mayah Topes</title>
+  <!-- Icono de la página -->
+  <link rel="icon" href="https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-6/441870950_402529629355404_1175844091749898574_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=5m1_QlSCL1cQ7kNvgF3PUXT&_nc_oc=Adhf161F-IwRWwMk6aayXF9KOQ0ANZ9qmy6lNTs284rP8Xr74sVRLQJXMcTcunzHFpgVMIB3o40maw8yIit0Hk3D&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=AyJt_CC89XCw5V2IS51b4-M&oh=00_AYEBXof0b36H4BKsi1wm186gH8RKVKorcatuXzeToJVNeg&oe=67D3C5B8" type="image/jpeg">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Marca (Logo y Nombre) -->
+      <a class="navbar-brand" href="#">
+        <img src="https://scontent-mia3-3.xx.fbcdn.net/v/t39.30808-6/441870950_402529629355404_1175844091749898574_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=5m1_QlSCL1cQ7kNvgF3PUXT&_nc_oc=Adhf161F-IwRWwMk6aayXF9KOQ0ANZ9qmy6lNTs284rP8Xr74sVRLQJXMcTcunzHFpgVMIB3o40maw8yIit0Hk3D&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=AyJt_CC89XCw5V2IS51b4-M&oh=00_AYEBXof0b36H4BKsi1wm186gH8RKVKorcatuXzeToJVNeg&oe=67D3C5B8" alt="Logo Mayah Topes" width="30" height="24" class="d-inline-block align-text-top">
+        MAYAH Topes
+      </a>
+      <!-- Botón responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" 
+              aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#noticias">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <!-- Redirige a la sección de Contáctenos en el index -->
+            <a class="nav-link" href="#contact-section">Contáctenos</a>
+          </li>
+          <!-- Switch de Modo Oscuro -->
+          <li class="nav-item d-flex align-items-center">
+            <label class="switch ms-3 mb-0">
+              <input type="checkbox" id="darkModeSwitch">
+              <span class="slider">
+                <i class="bi bi-brightness-high-fill icon-sun"></i>
+                <i class="bi bi-moon-stars-fill icon-moon"></i>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Toast para modo oscuro (no bloqueante) -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="darkModeToast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Modo oscuro activado
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Carrusel con efecto Crossfade -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" 
+              aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" 
+              aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" 
+              aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Primer Slide -->
+      <div class="carousel-item active c-item">
+        <img src="https://media.istockphoto.com/id/503047952/es/foto/piedra-natural-azulejos-de-m%C3%A1rmol-y-granito-de-pila-de-muestras-gama.jpg?s=612x612&w=0&k=20&c=pj7xWw_ufldquLJt25aTAROR1l70R0UhsQ0_Mtfflnw=" 
+             class="d-block w-100 c-img" alt="Instalación de Topes">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="mt-5 fs-3 text-uppercase">Instalación de Topes</p>
+          <h1 class="display-1 fw-bolder text-capitalize">Espacios que inspiran.</h1>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-4" data-bs-toggle="modal" data-bs-target="#bookingModal">More Info</button>
+        </div>
+      </div>
+      <!-- Segundo Slide -->
+      <div class="carousel-item c-item">
+        <img src="https://media.istockphoto.com/id/1436198670/es/foto/porcelana-cuatro-muestras-cuadradas-de-gres-colocadas-sobre-encimeras-de-cocina-ejemplos-de.jpg?s=612x612&w=0&k=20&c=CPgAYtBuaVqbQGJaRLWMNVxfGXWQSUN9UdkZ63ytbmY=" 
+             class="d-block w-100 c-img" alt="Diseño Moderno">
+        <div class="carousel-caption top-0">
+          <p class="mt-5 fs-3 text-uppercase">Diseño Moderno</p>
+          <h1 class="display-1 fw-bolder text-capitalize">Innovación que transforma ambientes.</h1>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#bookingModal">More Info</button>  
+        </div>
+      </div>
+      <!-- Tercer Slide -->
+      <div class="carousel-item c-item">
+        <img src="https://media.istockphoto.com/id/1391304881/es/foto/mujer-asi%C3%A1tica-dise%C3%B1adora-de-interiores-elige-el-color-de-la-encimera-de-piedra-para-cocina-o.jpg?s=612x612&w=0&k=20&c=7vxqzTivIHsiYyEnT5tLt_pS1wfO5V1WoYmTrJwGy7Y=" 
+             class="d-block w-100 c-img" alt="Acabados en Mármol">
+        <div class="carousel-caption top-0">
+          <p class="mt-5 fs-3 text-uppercase">Acabados en Mármol</p>
+          <h1 class="display-1 fw-bolder text-capitalize">Elegancia y resistencia en cada detalle.</h1>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#bookingModal">More Info</button>  
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Modal More Info (se activa desde el carrusel) -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookingModalLabel">Más Información</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+            Por favor, dirígete a la sección <strong>Contáctenos</strong> y envíanos tu consulta. ¡Estaremos encantados de atenderte!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección "Sobre Nosotros" -->
+  <div class="container-fluid my-5" id="sobre-nosotros">
+    <div class="container">
+      <header>
+        <h1 class="display-4 text-center">Sobre Nosotros</h1>
+      </header>
+      <p class="lead text-center">
+        <strong>Mayah Topes</strong> es una empresa especializada en la <strong>instalación</strong> y <strong>venta</strong> de <strong>topes de mármol</strong> y acabados de alta <strong>calidad</strong>. 
+        Transformamos espacios con <strong>elegancia</strong>, <strong>innovación</strong> y <strong>durabilidad</strong>. Nuestro compromiso es ofrecer un servicio <strong>profesional</strong> y <strong>personalizado</strong>, haciendo realidad tus ideas de diseño. Con años de experiencia, nos destacamos por la <strong>atención al detalle</strong> y la <strong>excelencia</strong>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Sección "Nuestros Materiales" -->
+<div class="container-fluid productos mt-4" id="productos">
+    <header>
+      <h2 class="text-center">Nuestros Materiales</h2>
+    </header>
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.08rt6nopv39Ga5ZgzHfYmAHaE7?w=273&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Marmol Rio</h5>
+            <p class="card-text">Calidad, diseño y durabilidad para transformar tus espacios.</p>
+            <p class="card-text"><small class="text-muted">Lanzado: 2025</small></p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://img.archiexpo.es/images_ae/photo-mg/190526-17305651.jpg" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Granito</h5>
+            <p class="card-text">Innovación y elegancia en cada detalle para ambientes modernos.</p>
+            <p class="card-text"><small class="text-muted">Lanzado: 2024</small></p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Producto 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://solucionenpiedra.com.mx/wp-content/uploads/2024/08/Placas-de-Marmol.jpeg" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Marmol White</h5>
+            <p class="card-text">Soluciones personalizadas para crear espacios únicos.</p>
+            <p class="card-text"><small class="text-muted">Lanzado: 2023</small></p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Producto 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://images.squarespace-cdn.com/content/v1/5d696a00c858a700010ea989/1664317280319-BIDAOHG4FAB5NL4D1F98/marmolgurza_marmol_negro_monterrey_placa_bodega.jpg" class="card-img-top" alt="Producto 4">
+          <div class="card-body">
+            <h5 class="card-title">Marmol black</h5>
+            <p class="card-text">Material resistente y de alta calidad, ideal para proyectos exigentes.</p>
+            <p class="card-text"><small class="text-muted">Lanzado: 2025</small></p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Producto 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.GBbbUzyCV_OwaqzSnnOloAHaFj?rs=1&pid=ImgDetMain" class="card-img-top" alt="Producto 5">
+          <div class="card-body">
+            <h5 class="card-title">Marmol Travelino</h5>
+            <p class="card-text">Diseño moderno que combina funcionalidad y estética.</p>
+            <p class="card-text"><small class="text-muted">Lanzado: 2024</small></p>
+           
+          </div>
+        </div>
+      </div>
+      <!-- Producto 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.im2ipbIVv66wxKRm22IqugHaFj?w=1500&h=1125&rs=1&pid=ImgDetMain" class="card-img-top" alt="Producto 6">
+          <div class="card-body">
+            <h5 class="card-title">Marmol White Sand
+            </h5>
+            <p class="card-text">Alta innovación en materiales, ofreciendo soluciones a medida.</p>
+            <p class="card-text"><small class="text-muted">Lanzado: 2023</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Sección "Características de Nuestros Materiales" (con iconos) -->
+  <div class="container my-5" id="caracteristicas-materiales">
+    <div class="text-center mb-4">
+      <h2 class="display-4">Características de Nuestros Materiales</h2>
+      <p class="lead">
+        Nuestros materiales se caracterizan por su <strong>durabilidad</strong>, 
+        <strong>resistencia</strong> y <strong>versatilidad</strong>.
+      </p>
+    </div>
+    <div class="row text-center">
+      <div class="col-12 col-md-4 mb-4">
+        <div class="feature-icon d-inline-block p-4">
+          <i class="bi bi-shield-fill-check" style="font-size: 5rem; color: #007bff;"></i>
+          <h3 class="mt-3">Durabilidad</h3>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <div class="feature-icon d-inline-block p-4">
+          <i class="bi bi-hammer" style="font-size: 5rem; color: #28a745;"></i>
+          <h3 class="mt-3">Resistencia</h3>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <div class="feature-icon d-inline-block p-4">
+          <i class="bi bi-arrows-move" style="font-size: 5rem; color: #ffc107;"></i>
+          <h3 class="mt-3">Versatilidad</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Noticias -->
+  <div class="container mt-4" id="noticias">
+    <header>
+      <h2 class="text-center">Noticias</h2>
+    </header>
+    <div class="row">
+      <!-- Noticia 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card noticia-card">
+          <img src="https://www.wolf-nordico.cl/wp-content/uploads/2023/12/DSC0042.jpg" class="card-img-top" alt="Noticia 1">
+          <div class="card-body">
+            <h5 class="card-title">Innovación en Mármol</h5>
+            <p class="card-text">te contamos todas las innovaciones tecnológicas en la industria de la piedra natural negra, con un enfoque especial en el mármol negro de Calatorao y su aplicación en la decoración de interiores. </p>
+            <button class="btn btn-info" onclick="mostrarAlerta()">Leer más</button>
+          </div>
+        </div>
+      </div>
+      <!-- Noticia 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card noticia-card">
+          <img src="https://img.freepik.com/fotos-premium/marmol-creado-tecnologia-generativa-ia_666746-4704.jpg" class="card-img-top" alt="Noticia 2">
+          <div class="card-body">
+            <h5 class="card-title"> Nuevas tendencias en diseño</h5>
+            <p class="card-text">Calacatta: el año del mármol calacatta.
+                All in one: la tendencia de mármol con encimera incorporada.
+                Tonos negros.
+                Diferentes texturas.</p>
+            <button class="btn btn-info" onclick="mostrarAlerta()">Leer más</button>
+          </div>
+        </div>
+      </div>
+      <!-- Noticia 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card noticia-card">
+          <img src="https://media.revistaad.es/photos/63dbda6069348ae995551bd2/16:9/w_1280,c_limit/AD0122_HALLWORTH_15.jpg?mbid=social_retweet" class="card-img-top" alt="Noticia 3">
+          <div class="card-body">
+            <h5 class="card-title"> La sostenibilidad en el mármol</h5>
+            <p class="card-text">El mármol usado en obras o construcciones ya obsoletas, se puede reutilizar en nuevas edificaciones. Gracias a su versatilidad se ajusta a las necesidades de cualquier proyecto arquitectónico, tradicional o contemporáneo.</p>
+            <button class="btn btn-info" onclick="mostrarAlerta()">Leer más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Enlaces de Interés -->
+<div class="container-fluid mt-4" id="enlaces">
+      <h2 class="text-center">Enlaces de Interés</h2>
+      <div class="text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UxkqyQZqux4?si=JwZkb9dVZHM9H5F3" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- -Políticas de Privacidad -->
+<div class="toast-container position-fixed bottom-0 start-0 p-3">
+    <div id="privacyToast" class="toast align-items-center text-bg-warning border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Políticas de Privacidad: Al usar este sitio, aceptas nuestras políticas de privacidad.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Sección de Contacto en Card Completo con Redes Sociales (ubicada en #contact-section) -->
+  <div class="container-fluid my-5" id="contact-section">
+    <div class="card shadow-sm w-100" style="background-color: #e9ecef; padding: 30px; border: none;">
+      <div class="row">
+        <!-- Columna Izquierda: Texto, Formulario y Redes Sociales -->
+        <div class="col-md-4">
+          <div class="mb-4">
+            <h2 class="text-primary">Ponte en contacto con nosotros</h2>
+            <p class="lead">
+              Déjanos tu información y nos comunicaremos contigo para conocer más sobre tu proyecto.
+            </p>
+          </div>
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Apellido" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Empresa">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="privacyCheck" required>
+              <label class="form-check-label" for="privacyCheck">Acepto la política de privacidad</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+          <!-- Redes Sociales -->
+          <div class="mt-4 text-center">
+            <a href="https://www.facebook.com/people/Mayah-Topes/100087951093569/" target="_blank" class="me-3">
+              <i class="bi bi-facebook" style="font-size: 1.5rem; color: #4267B2;"></i>
+            </a>
+            <a href="https://www.instagram.com/mayahtopes/" target="_blank">
+              <i class="bi bi-instagram" style="font-size: 1.5rem; color: #C13584;"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Columna Derecha: Mapa más grande -->
+        <div class="col-md-8">
+          <div class="ratio ratio-16x9">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3783.740301655185!2d-69.86465692518206!3d18.495418982593304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDI5JzQzLjUiTiA2OcKwNTEnNDMuNSJX!5e0!3m2!1ses!2sdo!4v1741711333544!5m2!1ses!2sdo" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-body-tertiary text-center py-3 mt-4">
+    <p>&copy; 2025 Mayah Topes. Todos los derechos reservados.</p>
+    <div>
+      <a href="https://www.facebook.com/people/Mayah-Topes/100087951093569/" class="me-2"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/mayahtopes/" class="me-2"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.twitter.com"><i class="bi bi-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- JavaScript personalizado y Bootstrap Bundle -->
+  <script src="Functions.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
